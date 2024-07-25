@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Color Stops</title>
+    <style>
+        #grad1 {
+            height: 150px;
+            background-color:red; /*For the browsers which does not support gradient*/
+            background-image: linear-gradient(red, yellow, green);
+        }
+
+        #grad2 {
+             height: 200px;
+             background-color: red; /* For browsers that do not support gradients */
+             background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        #grad3 {
+             height: 200px;
+             background-color: red; /* For browsers that do not support gradients */
+             background-image: linear-gradient(red 10%, green 85%, blue 90%);
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiple color stops</h2>
+    <div id="grad1"></div>
+
+    <h2>7 Color Stops (evenly spaced):</h2>
+    <div id="grad2"></div>
+
+    <h2>3 Color Stops (not evenly spaced):</h2>
+    <div id="grad3"></div>  
+    
+</body>
+</html>

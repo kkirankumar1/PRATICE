@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating border with border-image</title>
+    <style>
+        #bordering {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(isky.jpg) 30 round;
+        }
+
+        #bordering1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(iborderf.png) 70 round;
+        }
+
+        #bordering2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(sqpurple.gif) 80 round;
+        }
+
+        #bordering3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(iborderf.png) 30 stretch;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creating border with border-image</h1>
+
+    <p>Here is a border image</p>
+
+    <p id="bordering">A bordered image with 30 round.</p>
+
+    <p id="bordering1">A bordered image with 70 round.</p>
+
+    <p id="bordering2">A bordered image with 80 round.</p>
+
+    <p id="bordering3">A bordered Stretch image with 30 round.</p>
+
+    <p>This one is the original Image.</p><img src="isky.jpg" width="400px" height="250px">
+    <img src="iborderf.png" width="130px" height="130px">
+    <img src="sqpurple.gif" width="30px" height="30px">
+    
+</body>
+</html>

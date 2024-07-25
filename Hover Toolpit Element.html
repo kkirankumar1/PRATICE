@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Toolpit Element</title>
+    <style>
+        p {
+            display:none;
+            background-color: black;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        div:hover p {
+            display:block;
+        }
+        body {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        div {
+            text-align: center;
+            font-size: 140%;
+        }
+
+        a.highlight:hover {
+            color:red;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover Toolpit Element Below</h2>
+
+    <div>Hover over this TEXT to display the toopit as a Block
+        <p>Here are you again, Experience.</p>
+    
+    
+    <p><a class="highlight" href="oneog.html">ONE OG</a></p>
+    </div>
+</body>
+</html>

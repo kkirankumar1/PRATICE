@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in media queries</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+        .container {
+            --fontsize: 25px;
+        }
+
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--white);
+        }
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+            font-size: var(--fontsize);
+        }
+
+        @media screen and (min-width: 450px) {
+            .container {
+                --fontsize: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using variables in media queries</h1>
+
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea delectus, necessitatibus quo distinctio perferendis tenetur tempora reiciendis animi enim sed.
+    </div>
+    
+</body>
+</html>

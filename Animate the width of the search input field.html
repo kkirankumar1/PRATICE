@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate the width of the search input field</title>
+    <style>
+        form {
+            text-align: center;
+        }
+        
+        input[type=text] {
+            width: 50%;
+            box-sizing:border-box;
+            border:2px solid black;
+            border-radius:20px;
+            font-size:20px;
+            background-color:#ccc;
+            background-image: url(isearchicon.png);
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding:9px 20px 9px 35px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:hover {
+            background-color:bisque;
+            border-color:solid red;
+            cursor:pointer;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Input field with an icon inside</h2>
+
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+    </form>
+    
+</body>
+</html>

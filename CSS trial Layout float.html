@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .img {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+        .clearfix::after {
+             content: "";
+             clear: both;
+             display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Stack of Images</h2>
+    <h5 style="text-align: center;">ONLY USED WIDTH FOR FLOAT NOT USED HEIGHT</h5>
+
+
+    <div class="clearfix">
+        <div class="img"><!--ONLY USED WIDTH FOR FLOAT NOT USED HEIGHT-->
+            <img src="iballons.jpg" alt="ballons in sky" style="width:100%">
+        </div>
+
+        <div class="img">
+        <img src="ifruit.jpg" alt="Fruits" style="width: 100%;">
+        </div>
+
+        <div class="img">
+            <img src="ilamp.jpg" alt="lamp" style="width: 100%;">
+        </div>
+
+        <div class="img">
+            <img src="imandalorian.jpg" alt="mandolirian" style="width: 100%;">
+        </div>
+
+        <div class="img">
+            <img src="insideout.jpg" alt="inside out" style="width: 100%;">
+        </div>
+    </div>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi ratione voluptas deleniti temporibus ex velit dolor aut architecto sunt?</p>
+
+
+
+</body>
+</html>

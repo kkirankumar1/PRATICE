@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Size Keywords</title>
+    <style>
+
+        div,h4 {
+            float: left;
+            margin-top:20px;
+        }
+        #grad1 {
+            background: radial-gradient(closest-side at 60% 55%, red , yellow ,blue);
+            height: 170px;
+            width: 170px;
+            background-color: red;/*for the unsupportive browesers*/
+        }
+
+        #grad2 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: radial-gradient(farthest-side at 60% 55%, red, yellow, blue );
+        }
+
+        #grad3 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: radial-gradient(closest-corner at 60% 55%, red, yellow, blue );
+        }
+
+        #grad4 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: radial-gradient(farthest-corner at 60% 55%, red, yellow, blue );
+            margin-bottom: 20px;
+        }
+
+        
+        #grad5 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: repeating-radial-gradient(red, yellow 10%, blue 10% );
+            /*float: left ;*/
+        }
+
+        #grad6 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(red, yellow, blue);
+        }
+        
+        #grad7 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(red, yellow, blue,white,pink);
+        }
+        
+        #grad8 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(red 120deg, yellow 200deg, blue 300deg);
+        }
+        
+        #grad9 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(red 120deg, yellow 200deg, blue 300deg);
+            border-radius:50%;
+        }
+        
+        #grad10 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius:50%;
+        }
+        
+        #grad11 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(from 90deg, red, yellow, blue);
+            border-radius: 50%;
+        }
+        
+        #grad12 {
+            height: 170px;
+            width:170px;
+            background-color:black;
+            background: conic-gradient(at 70% 45%, red, yellow, blue);
+            border-radius: 50%;
+        }
+
+        #grad13 {
+            height: 170px;
+            width: 170px;
+            background:repeating-conic-gradient(red 10%, rgb(245, 184, 52) 30%/*, grey 10%*/);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Radial Gradient - Different Size Keywords</h2>
+
+    <h4>closest-side:</h4>
+    <div id="grad1"></div>
+    
+    <h4>farthest-side:</h4>
+    <div id="grad2"></div>
+    
+    <h4>closest-corner:</h4>
+    <div id="grad3"></div>
+    
+    <h4>farthest-corner:</h4>
+    <div id="grad4"></div><br>
+
+    
+    <h4 style="clear:left">Repeating Gradient:</h4>
+    <div id="grad5"></div>
+
+    <h4>Conic Gradient:</h4>
+    <div id="grad6"></div>
+    
+    <h4>Conic Gradient 5 colors:</h4>
+    <div id="grad7"></div>
+    
+    <h4>Conic Gradient degree:</h4> 
+    <div id="grad8"></div>
+    
+    <h4>Conic Gradient circle:</h4> 
+    <div id="grad9"></div>
+    
+    <h4>Conic Gradient circledeg:</h4> 
+    <div id="grad10"></div>
+       
+    <h4>Conic Gradient from radius 90%:</h4> 
+    <div id="grad11"></div>
+    
+    <h4>Conic Gradient from custom radius%:</h4> 
+    <div id="grad12"></div>
+
+    <h4>Repeating Conic Gradient</h4>
+    <div id="grad13"></div>
+</body>
+</html>

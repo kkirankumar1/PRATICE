@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounded Corners</title>
+    <style>
+
+        body {
+            text-align: justify;
+        }
+
+        #rc1 {
+            border-radius:20px;
+            background-color: greenyellow;
+            padding:20px;  
+            width:200px;
+            height:150px;
+        }
+
+        #rc2 {
+            border-radius:20px;
+            border:2px solid green;
+            padding:20px;
+            width:200px;
+            height:150px;
+            overflow-y: auto;
+            float:left;
+            margin-right: 10px;
+        }
+
+        #rc2::-webkit-scrollbar {
+             display: none; /* hide scrollbar in Chrome and Safari */
+        }
+
+        #rc2 {
+            scrollbar-width: none; /* hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+        }
+
+        #rc3 {
+            border-radius:20px;
+            background-image: url(iballons.jpg);
+            background-size: cover;
+            padding:20px;
+            width:200px;
+            height:150px;
+        }
+
+        .clear {
+            clear:both;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Rounded Corners</h2>
+
+    <p>Rounded corner with background color</p>
+    <div id="rc1">The plain one, With out a border<br>Lorem ipsum dolor sit amet.</div>
+
+    <p>Rounded corner with Border</p>
+    <div id="rc2">With a border<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe magnam totam sed blanditiis! Amet, ad tenetur? Facilis error sit molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione odio. Corporis odio reprehenderit itaque quibusdam nisi dolores accusantium. Nisi.</div>
+
+    <b>used a new command to hide the scroller and scroll the content:<br>
+    overflow-y: auto;<br>
+    scrollbar-width: none; /* hide scrollbar in Firefox */<br>
+    -ms-overflow-style: none; /* hide scrollbar in IE and Edge */<br>
+    #rc2::-webkit-scrollbar {<br>
+        display: none; /* hide scrollbar in Chrome and Safari */<br>}</b>
+
+    <div class="clear"></div>
+    
+    <p>Rounded corner with background image</p>
+    <div id="rc3">With an image</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical navbar with an "active" class</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding:8px 15px;
+            text-decoration: none;
+        }
+
+        li a.active {  /* used as default active link */
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical navbar with an "active" class</h2>
+    
+    <ul>
+        <li><a class="active" href="oneog.html">Home</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="ClearFix Element.html">ClearFix</a></li>
+        <li><a href="CheckBoxes Form.html">Form</a></li>
+    </ul>
+    
+</body>
+</html>

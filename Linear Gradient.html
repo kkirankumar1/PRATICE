@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        .grad {
+            background-image: linear-gradient(black,white);
+            height: 150px;
+        }
+
+        .grad1 {
+            background-image:linear-gradient(to right, rgb(103, 199, 255), white);
+            height: 150px;
+        }
+
+        .grad2 {
+            background-image:linear-gradient(to bottom, rgb(158, 245, 146), white);
+            height: 150px;
+        }
+
+        .grad3 {
+            background-image:linear-gradient(to bottom right, rgb(245, 146, 159), white);
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Linear Gradient Models</h2>
+
+    <p>normal one</p>
+    <div class="grad"></div>
+    <p>to right</p>
+    <div class="grad1"></div>
+    <p>to bottom</p>
+    <div class="grad2"></div>
+    <p>to bottom right</p>
+    <div class="grad3"></div>
+</body>
+</html>

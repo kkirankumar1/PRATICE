@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in Transparent Box</title>
+    <style>
+        div.background {
+            background-image: url(imandalorian.jpg);
+            background-size:cover;
+            /*background-size:100% 100%;*/
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            Background-color: #ffffff;
+            border: 2px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            margin:5%;
+            font-weight:bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div  class="background">
+        <div class="transbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

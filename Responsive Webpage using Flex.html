@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Responsive Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: grey;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: rgb(165, 67, 67);
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: plum;
+            padding: 20px;
+        }
+
+        .fakeimage {
+            width: 100%;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background:black;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>THE FIRST ONE</h1>
+        <p>Using a <b>Flex property</b> and designing a "Responsive".</p>
+    </div>
+
+    <div class="navbar">
+        <a href="oneog.html">ONE</a>
+        <a href="image/oneI.html">ONE-I</a>
+        <a href="tables/oneT.html">ONE-T</a>
+        <a href="link t.html">TXT ALL</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h6>K^3</h6>
+            <h5>Photo of Me:</h5>
+            <div class="fakeimage" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimage" style="height:60px;">Image</div><br>
+            <div class="fakeimage" style="height:60px;">Image</div><br>
+            <div class="fakeimage" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE</h2><br>
+            <div class="fakeimage" style="height:200px; width: 300px ;">Image</div>
+            <h5>Description:</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis nam, autem molestias nesciunt dolorem quam culpa optio quis repellat quasi eos omnis quae sapiente qui nobis nisi? Magnam nisi dignissimos ex, similique vel quae labore. Vitae adipisci exercitationem odit.</p>
+
+            <h3>TITLE-2</h3>
+            <div class="fakeimage" style="height:200px;">Image</div>
+            <h5>Description:</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a porro saepe minima cumque quaerat, quasi amet tenetur consectetur accusantium laborum esse rerum quos est voluptatem omnis, sapiente voluptatibus quidem.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>The End Of The Doc</h4>
+    </div>
+    
+</body>
+</html>

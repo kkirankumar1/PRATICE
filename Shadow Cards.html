@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+
+        .aw {
+            display:flex;
+        }
+
+        .ew {
+            /*display: block;*/
+            margin-right: 20px;
+            border: 2px solid grey;
+        }
+
+        div.card {
+         width: 250px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         text-align: center;
+         margin-right: 10px;
+        }
+
+        div.header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            height: 150px;
+            font-size: 40px;
+        }
+
+        div.container {
+            padding: 10px;
+        }
+
+        div.polaroid {
+             width: 250px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="aw">
+
+     <div class="ew">
+
+        <h1>Create Cards</h1>
+
+        <p>The box-shadow property can be used to create paper-like cards:</p>
+
+        <div class="card">
+            <div class="header">
+            <h1>1</h1>
+            </div>
+    
+            <div class="container">
+            <p>January 1, 2021</p>
+            </div>
+        </div>
+     </div>
+      
+     <div class="ew">
+        <h1>Create Polaroid Images</h1>
+
+        <p>The box-shadow property can be used to create polaroid images:</p>
+
+        <div class="polaroid">
+            <img src="iballons.jpg" alt="Norway" style="width:100%">
+
+            <div class="container">
+                <p>Hardanger, Norway</p>
+            </div>
+        </div>
+     </div>
+    </div>
+
+</body>
+</html>

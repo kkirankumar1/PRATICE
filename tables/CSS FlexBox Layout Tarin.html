@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: wheat;
+        }
+        section {
+            display: -webkit-flex;
+            display:flex;
+        }
+        nav {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #cc4;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        footer{
+            background-color: burlywood;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+        @media (max-width:700px){
+            section{
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS FLex BOx</h2>
+    <p>Resize the browser window to see the resposive effect</p>
+
+    <header>
+        <h2>TO-DO</h2>
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+            <li>ake up</li>
+            <li>lean up</li>
+            <li>ercise</li>
+            <li>etc</li>
+        </ul>
+        </nav>
+        <article>
+            <h1>Wake up</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum corrupti aliquam dolorem, repudiandae neque facilis iusto iure aliquid accusamus, doloribus debitis aspernatur repellendus totam in ipsam consequatur perspiciatis blanditiis.</p>
+        </article>
+    </section>
+    <footer>
+        <p>@Copright2024</p>
+        <p>sHiT</p>
+    </footer>
+    
+</body>
+</html>

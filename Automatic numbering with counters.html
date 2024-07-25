@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic numbering with counters</title>
+    <style>
+        body {
+            counter-reset:section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section" counter(section)":";
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using CSS Counter</h1>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    
+</body>
+</html>
