@@ -92,7 +92,7 @@ body {
         }
 
         .btn::before {
-            position: a;
+            position: absolute;
             background: linear-gradient(45deg, #f417de, 60%, #098dc);
         }
 
